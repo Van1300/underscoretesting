@@ -1,0 +1,45 @@
+{
+  "name" : "DELETE_FAILURE_WITH_ROLE",
+  "description" : "Delete failure with role",
+  "inputModelName" : "",
+  "outputModelName" : "",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "INPROGRESS"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/table1s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Table1"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "DELETE_MULTIPLE_RECORDS",
+    "method" : "DELETE",
+    "requestUrl" : "/rest/table1s/{ids}",
+    "userName" : "r1"
+  },
+  "deleteRecordInfo" : [ {
+    "tableRecordNo" : 1,
+    "tableName" : "Table1"
+  } ],
+  "outputData" : [ ],
+  "responseCode" : 403,
+  "errorMessage" : {
+    "STATUS_CODE" : 403,
+    "ERROR_CODE" : "DELETE_NOT_ALLOWED",
+    "MESSAGE" : "You dont have access to delete record `{0}`"
+  },
+  "verifyUsingService" : true,
+  "verificationRequestDetails" : {
+    "method" : "GET",
+    "requestUrl" : "/rest/table1s/{sid}",
+    "expectedResponseCode" : 204,
+    "userName" : "AppAdmin"
+  }
+}

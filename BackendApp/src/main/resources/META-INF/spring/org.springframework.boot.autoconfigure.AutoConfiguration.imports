@@ -1,0 +1,3 @@
+com.van1300.underscoretesting.config.ApplicationRepositoriesAutoConfiguration
+com.van1300.underscoretesting.config.ApplicationTransactionManagersAutoConfig
+com.van1300.underscoretesting.config.ApplicationProvidersAutoConfiguration

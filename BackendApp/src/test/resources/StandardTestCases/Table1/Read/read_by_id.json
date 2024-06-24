@@ -1,0 +1,44 @@
+{
+  "name" : "READ_BY_ID",
+  "description" : "Read by id",
+  "inputModelName" : "com.van1300.underscoretesting.model.Table1",
+  "outputModelName" : "com.van1300.underscoretesting.model.Table1",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "RESOLVED"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/table1s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Table1"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "GET_BY_SID",
+    "method" : "GET",
+    "requestUrl" : "/rest/table1s/{sid}",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Table1"
+    },
+    "userName" : "AppAdmin"
+  },
+  "outputData" : [ {
+    "field1" : "RESOLVED"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Table1" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/table1s/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

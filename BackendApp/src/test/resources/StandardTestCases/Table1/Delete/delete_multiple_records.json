@@ -1,0 +1,104 @@
+{
+  "name" : "DELETE_MULTIPLE_RECORDS",
+  "description" : "Delete multiple records",
+  "inputModelName" : "",
+  "outputModelName" : "",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "WAITING"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/table1s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Table1"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "INPROGRESS"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/table1s/",
+    "recordInfo" : {
+      "tableRecordNo" : 2,
+      "tableName" : "Table1"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "RESOLVED"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/table1s/",
+    "recordInfo" : {
+      "tableRecordNo" : 3,
+      "tableName" : "Table1"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "INPROGRESS"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/table1s/",
+    "recordInfo" : {
+      "tableRecordNo" : 4,
+      "tableName" : "Table1"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "OPEN"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/table1s/",
+    "recordInfo" : {
+      "tableRecordNo" : 5,
+      "tableName" : "Table1"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "DELETE_MULTIPLE_RECORDS",
+    "method" : "DELETE",
+    "requestUrl" : "/rest/table1s/{ids}",
+    "userName" : "AppAdmin"
+  },
+  "deleteRecordInfo" : [ {
+    "tableRecordNo" : 1,
+    "tableName" : "Table1"
+  }, {
+    "tableRecordNo" : 2,
+    "tableName" : "Table1"
+  }, {
+    "tableRecordNo" : 3,
+    "tableName" : "Table1"
+  }, {
+    "tableRecordNo" : 4,
+    "tableName" : "Table1"
+  }, {
+    "tableRecordNo" : 5,
+    "tableName" : "Table1"
+  } ],
+  "outputData" : [ ],
+  "responseCode" : 200,
+  "verifyUsingService" : true,
+  "verificationRequestDetails" : {
+    "method" : "GET",
+    "requestUrl" : "/rest/table1s/{sid}",
+    "expectedResponseCode" : 204,
+    "userName" : "AppAdmin"
+  }
+}

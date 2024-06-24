@@ -1,0 +1,49 @@
+{
+  "name" : "READ_FAILURE_WITH_ROLE",
+  "description" : "Read failure with role",
+  "inputModelName" : "com.van1300.underscoretesting.model.Table1",
+  "outputModelName" : "com.van1300.underscoretesting.model.Table1",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "OPEN"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/table1s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Table1"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "GET_BY_SID",
+    "method" : "GET",
+    "requestUrl" : "/rest/table1s/{sid}",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Table1"
+    },
+    "userName" : "r1"
+  },
+  "outputData" : [ {
+    "field1" : "OPEN"
+  } ],
+  "responseCode" : 403,
+  "errorMessage" : {
+    "STATUS_CODE" : 403,
+    "ERROR_CODE" : "READ_NOT_ALLOWED",
+    "MESSAGE" : "You dont have access to read record `{0}`"
+  },
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Table1" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/table1s/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

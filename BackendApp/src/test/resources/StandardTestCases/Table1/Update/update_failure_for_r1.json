@@ -1,0 +1,50 @@
+{
+  "name" : "UPDATE_FAILURE_WITH_ROLE",
+  "description" : "Update failure with role",
+  "inputModelName" : "com.van1300.underscoretesting.model.Table1",
+  "outputModelName" : "",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "WAITING"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/table1s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Table1"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "foreignKeyConfiguration" : { },
+    "serviceType" : "UPDATE",
+    "inputData" : {
+      "field1" : "WAITING"
+    },
+    "method" : "PUT",
+    "requestUrl" : "/rest/table1s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Table1"
+    },
+    "userName" : "r1"
+  },
+  "responseCode" : 403,
+  "errorMessage" : {
+    "STATUS_CODE" : 403,
+    "ERROR_CODE" : "UPDATE_NOT_ALLOWED",
+    "MESSAGE" : "You dont have access to update record `{0}`"
+  },
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Table1" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/table1s/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

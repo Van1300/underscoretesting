@@ -1,0 +1,19 @@
+{
+  "create" : {
+    "requestDetails" : {
+      "method" : "POST",
+      "requestUrl" : "/rest/table1s/",
+      "inputData" : [ {
+        "field1" : "RESOLVED"
+      }, {
+        "field1" : "OPEN"
+      } ]
+    }
+  },
+  "delete" : {
+    "requestDetails" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/table1s/{ids}"
+    }
+  }
+}
