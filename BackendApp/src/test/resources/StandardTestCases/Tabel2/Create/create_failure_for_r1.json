@@ -1,0 +1,29 @@
+{
+  "name" : "CREATE_FAILURE_WITH_ROLE",
+  "description" : "Create failure with role",
+  "inputModelName" : "com.van1300.underscoretesting.model.Tabel2",
+  "outputModelName" : "",
+  "requestDetails" : {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "RESOLVED",
+      "field2" : "N8nV2PNYvSrUhBijudNDIkUTz"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "r1",
+    "fileAttachmentInfo" : [ ]
+  },
+  "responseCode" : 403,
+  "errorMessage" : {
+    "STATUS_CODE" : 403,
+    "ERROR_CODE" : "SAVE_NOT_ALLOWED",
+    "MESSAGE" : "You dont have access to save record"
+  },
+  "verifyUsingService" : false
+}

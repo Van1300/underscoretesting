@@ -1,0 +1,21 @@
+{
+  "create" : {
+    "requestDetails" : {
+      "method" : "POST",
+      "requestUrl" : "/rest/tabel2s/",
+      "inputData" : [ {
+        "field1" : "RESOLVED",
+        "field2" : "hwAM9pvrr6BxgeUIAvXj3S37Z"
+      }, {
+        "field1" : "WAITING",
+        "field2" : "UV2dEOImvdyTn5cvu14iY4IE0"
+      } ]
+    }
+  },
+  "delete" : {
+    "requestDetails" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/tabel2s/{ids}"
+    }
+  }
+}

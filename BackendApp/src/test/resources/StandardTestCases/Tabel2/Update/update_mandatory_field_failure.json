@@ -1,0 +1,55 @@
+{
+  "name" : "UPDATE_MANDATORY_FIELD_FAILURE",
+  "description" : "Update mandatory field failure",
+  "inputModelName" : "com.van1300.underscoretesting.model.Tabel2",
+  "outputModelName" : "",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "DONE",
+      "field2" : "YFyZLJph27lPphvHLh1fQ0OlA"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "foreignKeyConfiguration" : { },
+    "serviceType" : "UPDATE",
+    "inputData" : {
+      "field1" : "DONE"
+    },
+    "method" : "PUT",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "AppAdmin"
+  },
+  "responseCode" : 400,
+  "errorMessage" : {
+    "STATUS_CODE" : 400,
+    "ERROR_CODE" : "VALIDATION",
+    "MESSAGE" : "VALIDATION",
+    "DETAIL" : [ {
+      "ERROR_CODE" : "BLANK_VALUE",
+      "MESSAGE" : "`field2` value cannot be blank"
+    } ]
+  },
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Tabel2" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/tabel2s/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

@@ -7,7 +7,7 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "OPEN"
+      "field1" : "WAITING"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",
@@ -20,7 +20,7 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "RESOLVED"
+      "field1" : "OPEN"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",
@@ -33,7 +33,7 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "WAITING"
+      "field1" : "OPEN"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",
@@ -46,7 +46,7 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "INPROGRESS"
+      "field1" : "WAITING"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",
@@ -59,7 +59,7 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "RESOLVED"
+      "field1" : "INPROGRESS"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",
@@ -92,15 +92,15 @@
     "userName" : "AppAdmin"
   },
   "outputData" : [ {
+    "field1" : "WAITING"
+  }, {
     "field1" : "OPEN"
   }, {
-    "field1" : "RESOLVED"
+    "field1" : "OPEN"
   }, {
     "field1" : "WAITING"
   }, {
     "field1" : "INPROGRESS"
-  }, {
-    "field1" : "RESOLVED"
   } ],
   "responseCode" : 200,
   "verifyUsingService" : false,

@@ -7,7 +7,7 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "INPROGRESS"
+      "field1" : "WAITING"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",

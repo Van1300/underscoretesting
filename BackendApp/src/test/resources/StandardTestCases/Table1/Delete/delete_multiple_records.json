@@ -7,7 +7,7 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "WAITING"
+      "field1" : "OPEN"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",
@@ -20,7 +20,7 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "INPROGRESS"
+      "field1" : "RESOLVED"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",
@@ -33,7 +33,7 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "RESOLVED"
+      "field1" : "OPEN"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",
@@ -46,7 +46,7 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "INPROGRESS"
+      "field1" : "RESOLVED"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",
@@ -59,7 +59,7 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "OPEN"
+      "field1" : "INPROGRESS"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",

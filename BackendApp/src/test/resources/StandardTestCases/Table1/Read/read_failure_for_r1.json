@@ -7,7 +7,7 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "OPEN"
+      "field1" : "RESOLVED"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",
@@ -29,7 +29,7 @@
     "userName" : "r1"
   },
   "outputData" : [ {
-    "field1" : "OPEN"
+    "field1" : "RESOLVED"
   } ],
   "responseCode" : 403,
   "errorMessage" : {

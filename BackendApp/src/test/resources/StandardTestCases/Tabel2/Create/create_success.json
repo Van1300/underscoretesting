@@ -1,0 +1,37 @@
+{
+  "name" : "CREATE_SUCCESS",
+  "description" : "Create success",
+  "inputModelName" : "com.van1300.underscoretesting.model.Tabel2",
+  "outputModelName" : "com.van1300.underscoretesting.model.Tabel2",
+  "setUp" : [ ],
+  "requestDetails" : {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "INPROGRESS",
+      "field2" : "EEHjNkWSOY3rg2jWjEIFNr8KO"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  },
+  "outputData" : [ {
+    "field1" : "INPROGRESS",
+    "field2" : "EEHjNkWSOY3rg2jWjEIFNr8KO"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Tabel2" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/tabel2s/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

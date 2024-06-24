@@ -4,7 +4,7 @@
       "method" : "POST",
       "requestUrl" : "/rest/table1s/",
       "inputData" : [ {
-        "field1" : "RESOLVED"
+        "field1" : "INPROGRESS"
       }, {
         "field1" : "OPEN"
       } ]

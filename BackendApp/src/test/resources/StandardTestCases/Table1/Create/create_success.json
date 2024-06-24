@@ -8,7 +8,7 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "OPEN"
+      "field1" : "INPROGRESS"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",
@@ -20,7 +20,7 @@
     "fileAttachmentInfo" : [ ]
   },
   "outputData" : [ {
-    "field1" : "OPEN"
+    "field1" : "INPROGRESS"
   } ],
   "responseCode" : 200,
   "verifyUsingService" : false,

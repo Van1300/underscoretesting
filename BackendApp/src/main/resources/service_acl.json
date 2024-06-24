@@ -166,6 +166,52 @@
       ]
     }
   },
+  "tabel2s": {
+    "post": {
+      "/datatable": [
+        "App Admin",
+        "Role1"
+      ],
+      "/": [
+        "App Admin",
+        "Role1"
+      ]
+    },
+    "get": {
+      "/{sid}": [
+        "App Admin",
+        "Role1"
+      ],
+      "/getbytablw2_p_key/{field2}": [
+        "App Admin",
+        "Role1"
+      ],
+      "/autosuggest": [
+        "App Admin",
+        "Role1"
+      ]
+    },
+    "put": {
+      "/blanksname/createopentab2/{id}": [
+        "App Admin",
+        "Role1"
+      ],
+      "/": [
+        "App Admin",
+        "Role1"
+      ]
+    },
+    "delete": {
+      "/{ids}": [
+        "App Admin",
+        "Role1"
+      ],
+      "/{id}/delete/{ids}": [
+        "App Admin",
+        "Role1"
+      ]
+    }
+  },
   "environmentinfo": {
     "get": {
       "/": [

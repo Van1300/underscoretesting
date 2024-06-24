@@ -1,0 +1,51 @@
+{
+  "name" : "UPDATE_SUCCESS",
+  "description" : "Update success",
+  "inputModelName" : "com.van1300.underscoretesting.model.Tabel2",
+  "outputModelName" : "com.van1300.underscoretesting.model.Tabel2",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "RESOLVED",
+      "field2" : "nvZ2LQOmK1YM7A7yF0rJQ5qSt"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "foreignKeyConfiguration" : { },
+    "serviceType" : "UPDATE",
+    "inputData" : {
+      "field2" : "0G1x68z7A4LNHwQjRR49wVVJZ",
+      "field1" : "OPEN"
+    },
+    "method" : "PUT",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "AppAdmin"
+  },
+  "outputData" : [ {
+    "field2" : "0G1x68z7A4LNHwQjRR49wVVJZ",
+    "field1" : "OPEN"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Tabel2" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/tabel2s/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

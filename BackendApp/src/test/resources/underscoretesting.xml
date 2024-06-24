@@ -4,6 +4,7 @@
 	<test thread-count="1" name="Testunderscoretesting">
 	<packages>
 			<package name="com.van1300.underscoretesting.apitest.Table1"></package>
+			<package name="com.van1300.underscoretesting.apitest.Tabel2"></package>
 		</packages>
 	</test>
 </suite> 

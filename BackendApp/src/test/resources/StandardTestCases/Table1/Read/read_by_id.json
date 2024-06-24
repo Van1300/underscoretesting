@@ -7,7 +7,7 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "RESOLVED"
+      "field1" : "INPROGRESS"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",
@@ -29,7 +29,7 @@
     "userName" : "AppAdmin"
   },
   "outputData" : [ {
-    "field1" : "RESOLVED"
+    "field1" : "INPROGRESS"
   } ],
   "responseCode" : 200,
   "verifyUsingService" : false,

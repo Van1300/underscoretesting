@@ -22,13 +22,14 @@ import com.vs.rappit.dataimport.model.RappitImportTemplates;
 import com.vs.rappit.exposedapi.base.model.RappitExposedAPIClients;
 import com.van1300.underscoretesting.model.Table1;
 import com.van1300.underscoretesting.model.ApplicationUser;
+import com.van1300.underscoretesting.model.Tabel2;
 
 @Component("JpaEntityCreator")
 public class UnderscoretestingJPAEntityManager implements IJPAEntityCreator {
 
 	@Override
 	public List<String> getDbEntities() {
-	    Class[] dbEntityClasses = new Class[] { Changelog.class, WorkflowHistory.class, EvaAttachment.class ,Table1.class, ApplicationUser.class,  Task.class, TaskProgress.class, TaskHandler.class, TaskStatus.class , RappitImportTemplates.class, RappitImport.class, RappitImportError.class, RappitImportActivity.class, AutoNumber.class };
+	    Class[] dbEntityClasses = new Class[] { Changelog.class, WorkflowHistory.class, EvaAttachment.class ,Table1.class, ApplicationUser.class, Tabel2.class,  Task.class, TaskProgress.class, TaskHandler.class, TaskStatus.class , RappitImportTemplates.class, RappitImport.class, RappitImportError.class, RappitImportActivity.class, AutoNumber.class };
 		return Arrays.asList(dbEntityClasses).stream().map(Class::getName).collect(Collectors.toList());
 	}
 }

@@ -7,7 +7,7 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "field1" : "WAITING"
+      "field1" : "RESOLVED"
     },
     "method" : "POST",
     "requestUrl" : "/rest/table1s/",
@@ -22,7 +22,7 @@
     "foreignKeyConfiguration" : { },
     "serviceType" : "UPDATE",
     "inputData" : {
-      "field1" : "WAITING"
+      "field1" : "RESOLVED"
     },
     "method" : "PUT",
     "requestUrl" : "/rest/table1s/",

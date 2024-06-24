@@ -27,6 +27,10 @@ export const routes: Routes = [
       {
         path: 'applicationuser',
         loadChildren: () => import('@app/application-user/application-user.module').then(m => m.ApplicationUserModule)
+      },
+      {
+        path: 'tabel2',
+        loadChildren: () => import('@app/tabel2/tabel2.module').then(m => m.Tabel2Module)
       }
    	]
   }

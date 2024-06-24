@@ -31,6 +31,21 @@
       "url" : "/table1/table1list"
     },
     "element" : "menuItem"
+  }, {
+    "pathsInvolved" : [ "/tabel2/tabel2list", "/tabel2/tabel2detail" ],
+    "accessControl" : [ "App Admin" ],
+    "onClick" : "navigate_to_page",
+    "outline" : false,
+    "infiniteScroll" : false,
+    "valueChange" : true,
+    "currentNode" : "43813c01-7dd3-472c-8bea-adf63ee62fb8",
+    "label" : "TABLE2_MENU",
+    "page" : {
+      "sid" : "4e9ea316-544d-4804-b6ad-4e4561acffa8",
+      "name" : "tabel2 List",
+      "url" : "/tabel2/tabel2list"
+    },
+    "element" : "menuItem"
   } ],
   "topBarLeft" : [ ],
   "topBarMiddle" : [ ],

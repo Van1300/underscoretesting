@@ -1,0 +1,46 @@
+{
+  "name" : "READ_BY_ID",
+  "description" : "Read by id",
+  "inputModelName" : "com.van1300.underscoretesting.model.Tabel2",
+  "outputModelName" : "com.van1300.underscoretesting.model.Tabel2",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "DONE",
+      "field2" : "L5SbsruWwjclbwKR7CRKJIjGx"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "GET_BY_SID",
+    "method" : "GET",
+    "requestUrl" : "/rest/tabel2s/{sid}",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "AppAdmin"
+  },
+  "outputData" : [ {
+    "field1" : "DONE",
+    "field2" : "L5SbsruWwjclbwKR7CRKJIjGx"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Tabel2" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/tabel2s/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

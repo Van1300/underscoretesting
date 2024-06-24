@@ -72,7 +72,7 @@
 				<app-version>1-0-0</app-version>
 				<env-suffix>Prod</env-suffix>
 				<spring.profiles.active>prod</spring.profiles.active>
-                    <memcached-ip>10.2.34.34:11211</memcached-ip>
+                    <memcached-ip>10.46.0.67:11211</memcached-ip>
                 <client-secret>${CLIENT_SECRET}</client-secret>
 				<client-id>${CLIENT_ID}</client-id>
 				<ng-build-configuration>build</ng-build-configuration>
@@ -88,7 +88,7 @@
 				<app-version>1-0-0</app-version>
 				<env-suffix>Dev</env-suffix>
 				<spring.profiles.active>dev</spring.profiles.active>
-                    <memcached-ip>10.2.34.34:11211</memcached-ip>
+                    <memcached-ip>10.46.0.67:11211</memcached-ip>
                 <client-secret>${CLIENT_SECRET}</client-secret>
 				<client-id>${CLIENT_ID}</client-id>
 				<ng-build-configuration>build</ng-build-configuration>
@@ -104,7 +104,7 @@
 				<app-version>1-0-0</app-version>
 				<env-suffix>Test</env-suffix>
 				<spring.profiles.active>test</spring.profiles.active>
-                    <memcached-ip>10.2.34.34:11211</memcached-ip>
+                    <memcached-ip>10.46.0.67:11211</memcached-ip>
                 <client-secret>${CLIENT_SECRET}</client-secret>
 				<client-id>${CLIENT_ID}</client-id>
 				<ng-build-configuration>build</ng-build-configuration>
@@ -120,7 +120,7 @@
 				<app-version>1-0-0</app-version>
 				<env-suffix>Pre-prod</env-suffix>
 				<spring.profiles.active>pre-prod</spring.profiles.active>
-                    <memcached-ip>10.2.34.34:11211</memcached-ip>
+                    <memcached-ip>10.46.0.67:11211</memcached-ip>
                 <client-secret>${CLIENT_SECRET}</client-secret>
 				<client-id>${CLIENT_ID}</client-id>
 				<ng-build-configuration>build</ng-build-configuration>

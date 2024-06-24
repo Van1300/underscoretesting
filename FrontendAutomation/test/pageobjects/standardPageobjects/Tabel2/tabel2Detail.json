@@ -1,0 +1,688 @@
+{
+  "components" : [ {
+    "name" : "Page Title",
+    "tests" : [ {
+      "name" : "Page Title",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the Page Name is displayed correctly.",
+        "expected" : [ {
+          "selector" : "app-tabel2-detail-detail .page-title",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : "tabel2 Detail"
+        } ]
+      } ]
+    } ]
+  }, {
+    "name" : "Page Navigation",
+    "tests" : [ {
+      "name" : "Page Navigation",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the navigation to the page is successful and that the page has loaded correctly.",
+        "expected" : [ {
+          "selector" : "app-tabel2-detail-detail",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      } ]
+    } ]
+  }, {
+    "name" : "Left Action Bar",
+    "tests" : [ {
+      "name" : "Back",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button is displayed with the correct label.",
+        "expected" : [ {
+          "selector" : "app-action-bar #BACK p-button .p-button-label",
+          "action" : "getText",
+          "condition" : "equal",
+          "match" : "Back"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button's font family is set properly.",
+        "expected" : [ {
+          "selector" : "#BACK span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "font-family",
+          "condition" : "equal",
+          "match" : "poppins"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button's font style is set properly.",
+        "expected" : [ {
+          "selector" : "#BACK span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "font-style",
+          "condition" : "equal",
+          "match" : "normal"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button's font weight is set properly.",
+        "expected" : [ {
+          "selector" : "#BACK span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "font-weight",
+          "condition" : "equal",
+          "match" : 400
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button is enabled by default",
+        "expected" : [ {
+          "selector" : "app-action-bar #BACK p-button button:not(.p-disabled)",
+          "action" : "isEnabled",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button is displayed.",
+        "expected" : [ {
+          "selector" : "app-action-bar #BACK p-button button:not(.p-disabled)",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button contains an icon displayed before the text.",
+        "expected" : [ {
+          "selector" : "app-action-bar #BACK p-button button:not(.p-disabled) svg~span",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button's font sizeis set properly.",
+        "expected" : [ {
+          "selector" : "#BACK span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "font-size",
+          "condition" : "equal",
+          "match" : "13.5px"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button's background color is set properly.",
+        "expected" : [ {
+          "selector" : "#BACK span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "background-color",
+          "condition" : "equal",
+          "match" : "hsl(214,82%,51%)"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button's font color is set properly.",
+        "expected" : [ {
+          "selector" : "#BACK span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "color",
+          "condition" : "equal",
+          "match" : "rgba(255,255,255,1)"
+        } ]
+      } ]
+    }, {
+      "name" : "Save",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the Save Button's font weight is set properly.",
+        "expected" : [ {
+          "selector" : "#SAVE.btngroup",
+          "action" : "getCSSProperty",
+          "value" : "font-weight",
+          "condition" : "equal",
+          "match" : 400
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Save Button is enabled by default",
+        "expected" : [ {
+          "selector" : "app-action-bar #SAVE:not(.p-disabled)",
+          "action" : "isEnabled",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Save Button's font color is set properly.",
+        "expected" : [ {
+          "selector" : "#SAVE.btngroup",
+          "action" : "getCSSProperty",
+          "value" : "color",
+          "condition" : "equal",
+          "match" : "rgba(255,255,255,1)"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Save Button is displayed.",
+        "expected" : [ {
+          "selector" : "app-action-bar #SAVE:not(.p-disabled)",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Save Button's font family is set properly.",
+        "expected" : [ {
+          "selector" : "#SAVE.btngroup",
+          "action" : "getCSSProperty",
+          "value" : "font-family",
+          "condition" : "equal",
+          "match" : "poppins"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Save Button is displayed with the correct label.",
+        "expected" : [ {
+          "selector" : "app-action-bar #SAVE .p-button-label",
+          "action" : "getText",
+          "condition" : "equal",
+          "match" : "Save"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Save Button contains an icon displayed before the text.",
+        "expected" : [ {
+          "selector" : "app-action-bar #SAVE:not(.p-disabled) svg~span",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Save Button's font sizeis set properly.",
+        "expected" : [ {
+          "selector" : "#SAVE.btngroup",
+          "action" : "getCSSProperty",
+          "value" : "font-size",
+          "condition" : "equal",
+          "match" : "13.5px"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Save Button's background color is set properly.",
+        "expected" : [ {
+          "selector" : "#SAVE.btngroup",
+          "action" : "getCSSProperty",
+          "value" : "background-color",
+          "condition" : "equal",
+          "match" : "hsl(214,82%,51%)"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Save Button's font style is set properly.",
+        "expected" : [ {
+          "selector" : "#SAVE.btngroup",
+          "action" : "getCSSProperty",
+          "value" : "font-style",
+          "condition" : "equal",
+          "match" : "normal"
+        } ]
+      } ]
+    }, {
+      "name" : "Cancel",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the Cancel Button's font weight is set properly.",
+        "expected" : [ {
+          "selector" : "#CANCEL.btngroup",
+          "action" : "getCSSProperty",
+          "value" : "font-weight",
+          "condition" : "equal",
+          "match" : 400
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Cancel Button is enabled by default",
+        "expected" : [ {
+          "selector" : "app-action-bar #CANCEL:not(.p-disabled)",
+          "action" : "isEnabled",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Cancel Button's font color is set properly.",
+        "expected" : [ {
+          "selector" : "#CANCEL.btngroup",
+          "action" : "getCSSProperty",
+          "value" : "color",
+          "condition" : "equal",
+          "match" : "rgba(255,255,255,1)"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Cancel Button is displayed.",
+        "expected" : [ {
+          "selector" : "app-action-bar #CANCEL:not(.p-disabled)",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Cancel Button's font family is set properly.",
+        "expected" : [ {
+          "selector" : "#CANCEL.btngroup",
+          "action" : "getCSSProperty",
+          "value" : "font-family",
+          "condition" : "equal",
+          "match" : "poppins"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Cancel Button is displayed with the correct label.",
+        "expected" : [ {
+          "selector" : "app-action-bar #CANCEL .p-button-label",
+          "action" : "getText",
+          "condition" : "equal",
+          "match" : "Cancel"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Cancel Button contains an icon displayed before the text.",
+        "expected" : [ {
+          "selector" : "app-action-bar #CANCEL:not(.p-disabled) svg~span",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Cancel Button's font sizeis set properly.",
+        "expected" : [ {
+          "selector" : "#CANCEL.btngroup",
+          "action" : "getCSSProperty",
+          "value" : "font-size",
+          "condition" : "equal",
+          "match" : "13.5px"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Cancel Button's background color is set properly.",
+        "expected" : [ {
+          "selector" : "#CANCEL.btngroup",
+          "action" : "getCSSProperty",
+          "value" : "background-color",
+          "condition" : "equal",
+          "match" : "hsl(214,82%,51%)"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Cancel Button's font style is set properly.",
+        "expected" : [ {
+          "selector" : "#CANCEL.btngroup",
+          "action" : "getCSSProperty",
+          "value" : "font-style",
+          "condition" : "equal",
+          "match" : "normal"
+        } ]
+      } ]
+    }, {
+      "name" : "Changelog",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the ChangeLog Button contains an icon displayed before the text.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#CHANGELOG:not(.p-disabled) svg~span",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the ChangeLog Button is displayed.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#CHANGELOG:not(.p-disabled)",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the ChangeLog Button's font color is set properly.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#CHANGELOG.p-menuitem-link",
+          "action" : "getCSSProperty",
+          "value" : "color",
+          "condition" : "equal",
+          "match" : "rgba(255,255,255,1)"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the ChangeLog Button's background color is set properly.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#CHANGELOG.p-menuitem-link",
+          "action" : "getCSSProperty",
+          "value" : "background-color",
+          "condition" : "equal",
+          "match" : "hsl(214,82%,51%)"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the ChangeLog Button's font style is set properly.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#CHANGELOG.p-menuitem-link",
+          "action" : "getCSSProperty",
+          "value" : "font-style",
+          "condition" : "equal",
+          "match" : "normal"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the ChangeLog Button is displayed with the correct label.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#CHANGELOG .p-menuitem-text",
+          "action" : "getText",
+          "condition" : "equal",
+          "match" : "ChangeLog"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the ChangeLog Button's font family is set properly.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#CHANGELOG.p-menuitem-link",
+          "action" : "getCSSProperty",
+          "value" : "font-family",
+          "condition" : "equal",
+          "match" : "poppins"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the ChangeLog Button's font sizeis set properly.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#CHANGELOG.p-menuitem-link",
+          "action" : "getCSSProperty",
+          "value" : "font-size",
+          "condition" : "equal",
+          "match" : "13.5px"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the ChangeLog Button's font weight is set properly.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#CHANGELOG.p-menuitem-link",
+          "action" : "getCSSProperty",
+          "value" : "font-weight",
+          "condition" : "equal",
+          "match" : 400
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the ChangeLog Button is enabled by default",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#CHANGELOG:not(.p-disabled)",
+          "action" : "isEnabled",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      } ]
+    }, {
+      "name" : "Workflow History",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the WorkflowHistory Button contains an icon displayed before the text.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#WORKFLOW_HISTORY:not(.p-disabled) svg~span",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the WorkflowHistory Button is displayed.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#WORKFLOW_HISTORY:not(.p-disabled)",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the WorkflowHistory Button's font color is set properly.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#WORKFLOW_HISTORY.p-menuitem-link",
+          "action" : "getCSSProperty",
+          "value" : "color",
+          "condition" : "equal",
+          "match" : "rgba(255,255,255,1)"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the WorkflowHistory Button's background color is set properly.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#WORKFLOW_HISTORY.p-menuitem-link",
+          "action" : "getCSSProperty",
+          "value" : "background-color",
+          "condition" : "equal",
+          "match" : "hsl(214,82%,51%)"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the WorkflowHistory Button's font style is set properly.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#WORKFLOW_HISTORY.p-menuitem-link",
+          "action" : "getCSSProperty",
+          "value" : "font-style",
+          "condition" : "equal",
+          "match" : "normal"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the WorkflowHistory Button is displayed with the correct label.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#WORKFLOW_HISTORY .p-menuitem-text",
+          "action" : "getText",
+          "condition" : "equal",
+          "match" : "WorkflowHistory"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the WorkflowHistory Button's font family is set properly.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#WORKFLOW_HISTORY.p-menuitem-link",
+          "action" : "getCSSProperty",
+          "value" : "font-family",
+          "condition" : "equal",
+          "match" : "poppins"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the WorkflowHistory Button's font sizeis set properly.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#WORKFLOW_HISTORY.p-menuitem-link",
+          "action" : "getCSSProperty",
+          "value" : "font-size",
+          "condition" : "equal",
+          "match" : "13.5px"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the WorkflowHistory Button's font weight is set properly.",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#WORKFLOW_HISTORY.p-menuitem-link",
+          "action" : "getCSSProperty",
+          "value" : "font-weight",
+          "condition" : "equal",
+          "match" : 400
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the WorkflowHistory Button is enabled by default",
+        "beforeActions" : [ {
+          "selector" : "#dropdownActionBar",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "#WORKFLOW_HISTORY:not(.p-disabled)",
+          "action" : "isEnabled",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      } ]
+    } ]
+  }, {
+    "name" : "Form",
+    "tests" : [ {
+      "name" : "Form",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the form columns count is displaying corrctly",
+        "expected" : [ {
+          "selector" : "#detail-view-container form .form-row.vg-col-2",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      } ]
+    }, {
+      "name" : "field1",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the field1 are displying correctly with right labels ",
+        "expected" : [ {
+          "selector" : "#field1 .col-form-label.field1-label",
+          "action" : "getText",
+          "condition" : "equal",
+          "match" : "field1"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the field1 is editable",
+        "expected" : [ {
+          "selector" : "#field1 [disabled]",
+          "action" : "isDisplayed",
+          "condition" : "equal"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the field1 is displaying",
+        "expected" : [ {
+          "selector" : "#field1 [hidden]",
+          "action" : "isDisplayed",
+          "condition" : "equal"
+        } ]
+      } ]
+    }, {
+      "name" : "field2",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the field2 are displying correctly with right labels ",
+        "expected" : [ {
+          "selector" : "#field2 .col-form-label.field2-label",
+          "action" : "getText",
+          "condition" : "equal",
+          "match" : "field2"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the field2 is editable",
+        "expected" : [ {
+          "selector" : "#field2 [disabled]",
+          "action" : "isDisplayed",
+          "condition" : "equal"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the field2 is displaying",
+        "expected" : [ {
+          "selector" : "#field2 [hidden]",
+          "action" : "isDisplayed",
+          "condition" : "equal"
+        } ]
+      } ]
+    } ]
+  } ],
+  "pageUrl" : "/#/tabel2/tabel2detail",
+  "elementConfirm" : {
+    "selector" : "#main-container",
+    "time" : 3000
+  },
+  "pageName" : "tabel2 detail"
+}

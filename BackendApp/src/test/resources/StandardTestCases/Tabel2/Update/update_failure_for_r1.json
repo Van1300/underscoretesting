@@ -1,0 +1,52 @@
+{
+  "name" : "UPDATE_FAILURE_WITH_ROLE",
+  "description" : "Update failure with role",
+  "inputModelName" : "com.van1300.underscoretesting.model.Tabel2",
+  "outputModelName" : "",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field2" : "0LThMYAxIpXFKc7NfhrJPFEtN",
+      "field1" : "RESOLVED"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "foreignKeyConfiguration" : { },
+    "serviceType" : "UPDATE",
+    "inputData" : {
+      "field2" : "0LThMYAxIpXFKc7NfhrJPFEtN",
+      "field1" : "RESOLVED"
+    },
+    "method" : "PUT",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "r1"
+  },
+  "responseCode" : 403,
+  "errorMessage" : {
+    "STATUS_CODE" : 403,
+    "ERROR_CODE" : "UPDATE_NOT_ALLOWED",
+    "MESSAGE" : "You dont have access to update record `{0}`"
+  },
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Tabel2" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/tabel2s/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

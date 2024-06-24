@@ -1,0 +1,21 @@
+{
+  "create" : {
+    "requestDetails" : {
+      "method" : "POST",
+      "requestUrl" : "/rest/tabel2s/",
+      "inputData" : [ {
+        "field1" : "DONE",
+        "field2" : "qXE6kAQGylXr4JWn8M9lIEDlv"
+      }, {
+        "field1" : "OPEN",
+        "field2" : "kZgiwy6o2XxKZ1e78FFNi2PdQ"
+      } ]
+    }
+  },
+  "delete" : {
+    "requestDetails" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/tabel2s/{ids}"
+    }
+  }
+}

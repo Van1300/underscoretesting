@@ -1,0 +1,610 @@
+{
+  "components" : [ {
+    "name" : "Page Title",
+    "tests" : [ {
+      "name" : "Page Title",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the navigation to the page is successful and that the page has loaded correctly.",
+        "expected" : [ {
+          "selector" : "app-tabel2-list-list .page-title",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      } ]
+    } ]
+  }, {
+    "name" : "Page Navigation",
+    "tests" : [ {
+      "name" : "Page Navigation",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the navigation to the page is successful and that the page has loaded correctly.",
+        "expected" : [ {
+          "selector" : "app-tabel2-list-list .page-title",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      } ]
+    } ]
+  }, {
+    "name" : "Action Bar",
+    "tests" : [ {
+      "name" : "Back",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button is displayed with the correct label.",
+        "expected" : [ {
+          "selector" : "app-action-bar #BACK p-button .p-button-label",
+          "action" : "getText",
+          "condition" : "equal",
+          "match" : "Back"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button's font family is set properly.",
+        "expected" : [ {
+          "selector" : "#BACK span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "font-family",
+          "condition" : "equal",
+          "match" : "poppins"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button's font style is set properly.",
+        "expected" : [ {
+          "selector" : "#BACK span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "font-style",
+          "condition" : "equal",
+          "match" : "normal"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that clicking on the button with back functionality navigates properly",
+        "beforeActions" : [ {
+          "selector" : "app-action-bar #BACK p-button button:not(.p-disabled)",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "action" : "getUrl",
+          "condition" : "contains",
+          "match" : "home"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button's font weight is set properly.",
+        "expected" : [ {
+          "selector" : "#BACK span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "font-weight",
+          "condition" : "equal",
+          "match" : 400
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button is displayed.",
+        "expected" : [ {
+          "selector" : "app-action-bar #BACK p-button button:not(.p-disabled)",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button is enabled by default",
+        "expected" : [ {
+          "selector" : "app-action-bar #BACK p-button button:not(.p-disabled)",
+          "action" : "isEnabled",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button contains an icon displayed before the text.",
+        "expected" : [ {
+          "selector" : "app-action-bar #BACK p-button button:not(.p-disabled) svg~span",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button's font sizeis set properly.",
+        "expected" : [ {
+          "selector" : "#BACK span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "font-size",
+          "condition" : "equal",
+          "match" : "13.5px"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button's background color is set properly.",
+        "expected" : [ {
+          "selector" : "#BACK span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "background-color",
+          "condition" : "equal",
+          "match" : "hsl(214,82%,51%)"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Back Button's font color is set properly.",
+        "expected" : [ {
+          "selector" : "#BACK span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "color",
+          "condition" : "equal",
+          "match" : "rgba(255,255,255,1)"
+        } ]
+      } ]
+    }, {
+      "name" : "New",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the New Button is displayed with the correct label.",
+        "expected" : [ {
+          "selector" : "app-action-bar #NEW p-button .p-button-label",
+          "action" : "getText",
+          "condition" : "equal",
+          "match" : "New"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the New Button's font family is set properly.",
+        "expected" : [ {
+          "selector" : "#NEW span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "font-family",
+          "condition" : "equal",
+          "match" : "poppins"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the New Button's font style is set properly.",
+        "expected" : [ {
+          "selector" : "#NEW span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "font-style",
+          "condition" : "equal",
+          "match" : "normal"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the New Button's font weight is set properly.",
+        "expected" : [ {
+          "selector" : "#NEW span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "font-weight",
+          "condition" : "equal",
+          "match" : 400
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the New Button is displayed.",
+        "expected" : [ {
+          "selector" : "app-action-bar #NEW p-button button:not(.p-disabled)",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the New Button is enabled by default",
+        "expected" : [ {
+          "selector" : "app-action-bar #NEW p-button button:not(.p-disabled)",
+          "action" : "isEnabled",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the New Button contains an icon displayed before the text.",
+        "expected" : [ {
+          "selector" : "app-action-bar #NEW p-button button:not(.p-disabled) svg~span",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that clicking on the Button with new functionality navigates to the detail page.",
+        "beforeActions" : [ {
+          "selector" : "app-action-bar #NEW p-button button:not(.p-disabled)",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "action" : "getUrl",
+          "condition" : "contains",
+          "match" : "tabel2 Detail"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the New Button's font sizeis set properly.",
+        "expected" : [ {
+          "selector" : "#NEW span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "font-size",
+          "condition" : "equal",
+          "match" : "13.5px"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the New Button's background color is set properly.",
+        "expected" : [ {
+          "selector" : "#NEW span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "background-color",
+          "condition" : "equal",
+          "match" : "hsl(214,82%,51%)"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the New Button's font color is set properly.",
+        "expected" : [ {
+          "selector" : "#NEW span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "color",
+          "condition" : "equal",
+          "match" : "rgba(255,255,255,1)"
+        } ]
+      } ]
+    }, {
+      "name" : "Delete",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the Delete Button contains an icon only.",
+        "expected" : [ {
+          "selector" : "app-action-bar #DELETE p-button button:not(.p-disabled) svg",
+          "action" : "isDisplayed",
+          "condition" : "equal"
+        }, {
+          "selector" : "app-action-bar #DELETE p-button .p-button-label",
+          "action" : "isDisplayed",
+          "condition" : "equal"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Delete Button is displayed.",
+        "expected" : [ {
+          "selector" : "app-action-bar #DELETE p-button button:not(.p-disabled)",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Delete Button is enabled by default",
+        "expected" : [ {
+          "selector" : "app-action-bar #DELETE p-button button:not(.p-disabled)",
+          "action" : "isEnabled",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Delete Button's background color is set properly.",
+        "expected" : [ {
+          "selector" : "#DELETE span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "background-color",
+          "condition" : "equal",
+          "match" : "hsl(214,82%,51%)"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that clicking on the button with delete functionaliy working",
+        "beforeActions" : [ {
+          "selector" : ".dataTables_scrollBody table tbody tr:nth-child(2) .select-checkbox input",
+          "action" : "click"
+        }, {
+          "selector" : "app-action-bar #DELETE p-button button:not(.p-disabled)",
+          "action" : "click"
+        }, {
+          "selector" : ".p-confirm-dialog-accept",
+          "action" : "click"
+        }, {
+          "action" : "wait",
+          "time" : 1000
+        } ],
+        "expected" : [ {
+          "selector" : ".notify-message"
+        } ]
+      } ]
+    }, {
+      "name" : "Refresh",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the Refresh Button contains an icon only.",
+        "expected" : [ {
+          "selector" : "app-action-bar #REFRESH p-button button:not(.p-disabled) svg",
+          "action" : "isDisplayed",
+          "condition" : "equal"
+        }, {
+          "selector" : "app-action-bar #REFRESH p-button .p-button-label",
+          "action" : "isDisplayed",
+          "condition" : "equal"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the clicking on the button with Refresh functionality is working.",
+        "beforeActions" : [ {
+          "selector" : "app-action-bar #REFRESH p-button button:not(.p-disabled)",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : "body",
+          "action" : "waitUntil",
+          "condition" : ""
+        }, {
+          "selector" : ".vs_grid_loader",
+          "action" : "isDisplayed",
+          "condition" : "equal"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Refresh Button is displayed.",
+        "expected" : [ {
+          "selector" : "app-action-bar #REFRESH p-button button:not(.p-disabled)",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Refresh Button is enabled by default",
+        "expected" : [ {
+          "selector" : "app-action-bar #REFRESH p-button button:not(.p-disabled)",
+          "action" : "isEnabled",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the Refresh Button's background color is set properly.",
+        "expected" : [ {
+          "selector" : "#REFRESH span.curved button",
+          "action" : "getCSSProperty",
+          "value" : "background-color",
+          "condition" : "equal",
+          "match" : "hsl(214,82%,51%)"
+        } ]
+      } ]
+    } ]
+  }, {
+    "name" : "Global search",
+    "tests" : [ {
+      "name" : "Search Field-field2",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify if 'Global Search' is working correctly for search field field2.",
+        "beforeActions" : [ {
+          "selector" : "input.p-inputtext",
+          "action" : "setValue",
+          "value" : "qXE6kAQGylXr4JWn8M9lIEDlv"
+        }, {
+          "selector" : ".p-inputtext",
+          "action" : "enter"
+        } ],
+        "expected" : [ {
+          "selector" : "body",
+          "action" : "waitUntil",
+          "condition" : "",
+          "match" : ""
+        }, {
+          "selector" : ".vs_grid_loader",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : false
+        }, {
+          "selector" : ".dataTables_scrollBody tbody tr:nth-child(1)",
+          "action" : "getText",
+          "condition" : "contain",
+          "match" : "qXE6kAQGylXr4JWn8M9lIEDlv"
+        } ]
+      } ]
+    }, {
+      "name" : "Global search",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify if the global search is available.",
+        "expected" : [ {
+          "selector" : ".search-box-input",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the search icon is available in the search box.",
+        "expected" : [ {
+          "selector" : "#search-container .input-group-prepend",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      } ]
+    } ]
+  }, {
+    "name" : "Advanced search",
+    "tests" : [ {
+      "name" : "Search Field-field2",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that clicking the advance search 'Clear Filter' button resets the fields to their default or empty values.",
+        "beforeActions" : [ {
+          "selector" : "#search-container .pi-filter",
+          "action" : "click"
+        }, {
+          "selector" : ".advanced-search #field2 input",
+          "action" : "setValue",
+          "value" : "qXE6kAQGylXr4JWn8M9lIEDlv"
+        }, {
+          "selector" : ".advanced-search .search-actions>div>.btn-secondary",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : ".advanced-search #field2 input"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the field2 is displaying in advanced search dropdown with right label",
+        "beforeActions" : [ {
+          "selector" : "#search-container .pi-filter",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : ".advanced-search #field2 .field2-label",
+          "action" : "getText",
+          "condition" : "equal",
+          "match" : "field2"
+        } ]
+      } ]
+    }, {
+      "name" : "Advanced search",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that the advance search icon is available in the search box.",
+        "expected" : [ {
+          "selector" : "#search-container  .pi-filter",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the advance search closes when clicking on close button",
+        "beforeActions" : [ {
+          "selector" : "#search-container .pi-filter",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : ".advanced-search",
+          "action" : "isDisplayed",
+          "condition" : "equal"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the advance search dropdown opens  ",
+        "beforeActions" : [ {
+          "selector" : "#search-container .pi-filter",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : ".advanced-search",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the advance search dropdown column count ",
+        "beforeActions" : [ {
+          "selector" : "#search-container .pi-filter",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : ".advanced-search .form-row vg-col-1",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the advance search dropdown Closes",
+        "beforeActions" : [ {
+          "selector" : "#search-container .pi-filter",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : ".advanced-search",
+          "action" : "isDisplayed",
+          "condition" : "equal"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify the advance search header name.",
+        "beforeActions" : [ {
+          "selector" : "#search-container .pi-filter",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : ".advanced-search .adv-search-header",
+          "action" : "getText",
+          "condition" : "equal",
+          "match" : "Advanced Search"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the advance search icon shows a pointer when the mouse hovers over it.",
+        "expected" : [ {
+          "selector" : "#search-container  .pi-filter",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that the advance search closes when clicking on cancelbutton",
+        "beforeActions" : [ {
+          "selector" : "#search-container .pi-filter",
+          "action" : "click"
+        }, {
+          "selector" : ".advanced-search .search-actions .advanced-search-cancel-btn",
+          "action" : "click"
+        } ],
+        "expected" : [ {
+          "selector" : ".advanced-search"
+        } ]
+      } ]
+    } ]
+  }, {
+    "name" : "Grid",
+    "tests" : [ {
+      "name" : "Grid",
+      "testcases" : [ {
+        "recDeleted" : false,
+        "name" : "Verify that mouse over a row will highlight the row",
+        "beforeActions" : [ {
+          "selector" : ".dataTables_scrollBody tbody tr:not(.dtrg-group)",
+          "action" : "moveTo"
+        } ],
+        "expected" : [ {
+          "selector" : ".dataTables_scrollBody tbody tr:not(.dtrg-group) td:nth-child(1)",
+          "action" : "getCSSProperty",
+          "value" : "box-shadow",
+          "condition" : "contains",
+          "match" : "rgb(234,234,234)0px0px0px9999pxinset"
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify that multiple records can be selected in the grid",
+        "expected" : [ {
+          "selector" : ".dataTables_scrollHeadInner .vs-grid-header th.select-checkbox .chk-select",
+          "action" : "isDisplayed",
+          "condition" : "equal",
+          "match" : true
+        } ]
+      }, {
+        "recDeleted" : false,
+        "name" : "Verify grid columns are displayed correctly",
+        "expected" : [ {
+          "selector" : ".dataTables_scrollHeadInner .vs-grid-header th",
+          "action" : "getText",
+          "condition" : "contains",
+          "match" : "field1, field2"
+        } ]
+      } ]
+    } ]
+  } ],
+  "pageUrl" : "/#/tabel2/tabel2list",
+  "elementConfirm" : {
+    "selector" : "#main-container",
+    "time" : 3000
+  },
+  "pageName" : "tabel2 list"
+}

@@ -1,0 +1,120 @@
+{
+  "name" : "READ_DATATABLE",
+  "description" : "Read datatable",
+  "inputModelName" : "com.van1300.underscoretesting.model.",
+  "outputModelName" : "com.van1300.underscoretesting.model.",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "INPROGRESS",
+      "field2" : "01HrJ972BdLKciAA0Edq6F6Lo"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "WAITING",
+      "field2" : "yALU4v8QSbK1jiuyvO9m0h2Nl"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 2,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "DONE",
+      "field2" : "e3LGD9W9i7X4MFHdLwdY3hT4q"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 3,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "WAITING",
+      "field2" : "MDWzBgqCuaioQyqIPRjHT2uLJ"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 4,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "field1" : "WAITING",
+      "field2" : "w3KflEt9WZ1Od7J0z3D68BKMh"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/tabel2s/",
+    "recordInfo" : {
+      "tableRecordNo" : 5,
+      "tableName" : "Tabel2"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "GET_DATATABLE",
+    "inputData" : {
+      "start" : 0,
+      "length" : 5,
+      "search" : { },
+      "columns" : [ {
+        "data" : "field2",
+        "name" : "field2",
+        "orderable" : true,
+        "searchable" : true
+      } ],
+      "order" : [ {
+        "column" : "createdDate",
+        "dir" : "desc"
+      } ]
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/tabel2s/datatable",
+    "userName" : "AppAdmin"
+  },
+  "outputData" : [ {
+    "field2" : "01HrJ972BdLKciAA0Edq6F6Lo"
+  }, {
+    "field2" : "yALU4v8QSbK1jiuyvO9m0h2Nl"
+  }, {
+    "field2" : "e3LGD9W9i7X4MFHdLwdY3hT4q"
+  }, {
+    "field2" : "MDWzBgqCuaioQyqIPRjHT2uLJ"
+  }, {
+    "field2" : "w3KflEt9WZ1Od7J0z3D68BKMh"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Tabel2" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/tabel2s/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

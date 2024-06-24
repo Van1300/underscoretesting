@@ -14,9 +14,9 @@ export const config: Options.Testrunner = {
         }
     },
     suites:{
-            Table1:[
-                './test/specs/Table1/table1List.ts',
-                './test/specs/Table1/table1Detail.ts'
+            Tabel2:[
+                './test/specs/Tabel2/tabel2List.ts',
+                './test/specs/Tabel2/tabel2Detail.ts'
           ]  
        },
     //

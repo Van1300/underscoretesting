@@ -33,6 +33,7 @@ import com.vs.rappit.exposedapi.base.model.RappitExposedAPIClients;
 import com.vs.rappit.base.model.Changelog;
 import com.van1300.underscoretesting.model.Table1;
 import com.van1300.underscoretesting.model.ApplicationUser;
+import com.van1300.underscoretesting.model.Tabel2;
 import com.vs.rappit.exposedapi.base.model.RappitExposedAPIClients;
 import com.vs.rappit.base.appconfiguration.AppConfigurationCache;
 import com.vs.rappit.base.factory.StorageFactory;
@@ -67,6 +68,7 @@ public class SQLUtil {
 	private ResponseEntity generateAlterStatements() {
 		String alterStatements = "ALTER TABLE `Table1` ADD CONSTRAINT `SIDUnique` UNIQUE (`sid`);"
  + NEWLINE + "ALTER TABLE `ApplicationUser` ADD CONSTRAINT `SIDUnique` UNIQUE (`sid`);"
+ + NEWLINE + "ALTER TABLE `Tabel2` ADD CONSTRAINT `SIDUnique` UNIQUE (`sid`);"
 ;
 		File f1 = new File("db_init.sql");		
 		if (f1.exists()) {
@@ -130,6 +132,7 @@ public class SQLUtil {
 		metadataSources.addAnnotatedClass(Changelog.class);
 		metadataSources.addAnnotatedClass(Table1.class);
 		metadataSources.addAnnotatedClass(ApplicationUser.class);
+		metadataSources.addAnnotatedClass(Tabel2.class);
 		metadataSources.addAnnotatedClass(RappitExposedAPIClients.class);
         Metadata metadata = metadataSources.buildMetadata();
         SchemaExport schemaExport = new SchemaExport();
